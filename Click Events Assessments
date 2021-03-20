@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<body>
+  <button value="Foo">Foo</button>
+  <button value="Bar">Bar</button>
+  <button value="FooBar">FooBar</button>
+</body>
+<main>
+</main>
+
+
+
+
+const button = document.querySelectorAll("button");
+const main = document.querySelector("main")
+
+for(let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function(evet) {
+    console.log(event.target.value);
+  })
+}
+
+button.addEventListener('click', responseToClick)
+
+function responseToClick(){
+   const h3tag = document.createElement('h3')
+   h3tag.textContent = "Foo";
+   main.appendChild(h3tag);
+   
+function responseToClick(){
+   h3tag.textContent = "Bar";
+   main.appendChild(h3tag);
+   
+function responseToClick(){
+   const h2tag = document.createElement('h2')
+   h2tag.textContent = "FooBar";
+   main.appendChild(h2tag);
+})
